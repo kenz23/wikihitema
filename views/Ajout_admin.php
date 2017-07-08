@@ -10,7 +10,7 @@ require"header.php";
 		<h1> Inscription <br/> <small> Merci de renseigner vos informations </small></h1>
 		</div>
 	</div>
-<form method="POST" action="../forms/traitementInsc.php">
+<form method="POST" action="../forms/traitementInscAdm.php">
 	<div class="row">
 		<div class="col-md-offset-2 col-md-3">
 			<div class="form-group">
@@ -54,8 +54,11 @@ require"header.php";
 
 	<div class="row">
 		<div class="col-md-offset-2 col-md-3">
-		<label for="role">Profil (Auteur ou Abonné)</label>
-		<input  type="text" id="role" name="role" class="form-control" placeholder="Rôle" >
+		<label for="role">Profil</label>
+		<input list="roles" type="text" id="role" name="role" class="form-control" placeholder="Rôle" >
+		<datalist id="roles">
+			<option>Administrateur</option>
+		</datalist>
 		</div>
 		<div class="col-md-offset-1 col-md-3">
 			<div class="form-group">
@@ -111,7 +114,25 @@ function surligne(champ, erreur)
       return true;
    }
 }
-
+//parcourir les differents caracteres du text https://openclassrooms.com/courses/tout-sur-le-javascript/td-verification-d-un-formulaire
+//https://openclassrooms.com/courses/apprenez-a-coder-avec-javascript/manipulez-les-chaines-de-caracteres
+/*function nettoyageJs(champ)
+{
+   var valeur=champ.value;
+   for (var i = 0; i <= valeur.length; i++) {
+   	var car= valeur.charAt(0);
+   	console.log(car);
+	   	if (car == '-'){
+	   	surligne(champ, true);
+	      return false;
+	   }
+	   else
+	   {
+	      surligne(champ, false);
+	      return true;
+	   }
+   }
+}*/
 </script>
 </script>
 </body>

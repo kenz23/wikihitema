@@ -73,20 +73,17 @@ html, body {
  }
 
  /********************gestion_site*****************/
- /* https://forum.alsacreations.com/topic-1-12161-1-Barre-vertical.html z-index: (de 0 à 100);*/
-
-
- .separation{
-    clear: both;
-    position: absolute;
-    margin-top :5%;
-    margin-left: 10%;
-    height: 60%;
-    width : 1px;
-    background: black;
-    z-index: 1;
-    }
+ 
  .menu{
+    float: left;
     width: 20%;
     
  }
+ .article{
+    margin-top: 5%;
+ }
+
+/**************************article**************************/
+#textarea{
+    width: 50%;
+} 

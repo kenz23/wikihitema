@@ -19,7 +19,7 @@ require"header.php";
         <p >
             <input class="button" type="submit" value="Connexion" />
         </p>
-        <p>Pas de compte? <a href="inscription.php">Créez-en un!</a></p>
+        <p>Pas de compte? <a href="../views/inscription.php">Créez-en un!</a></p>
     </form>
 </div>
 <?php 
